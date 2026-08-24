@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Card Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <img class="logo"
+                src="https://img.freepik.com/free-vector/business-logo-template-minimal-branding-design-vector_53876-136229.jpg?semt=ais_hybrid&w=740&q=80"
+                alt="P Company Logo">
+            <nav class="menu">
+                <a class="menu-elements" href="#home">About Us</a>
+                <a class="menu-elements" href="#pricing">Plans</a>
+                <a class="menu-elements" href="#contact">Contacts</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="home">
+        <div class="container business-card">
+            <h1 id="greeting">Welcome to P Company</h1>
+            <p>P Company is dedicated to delivering excellence through innovation and a client-first approach. We pride
+                ourselves on providing tailored solutions that bridge the gap between complex problems and elegant
+                results.</p>
+            <button id="action-btn">Get in Touch</button>
+        </div>
+        <!-- Contact Form Modal -->
+        <div id="contact-modal" class="modal-overlay">
+            <div class="modal-box">
+                <span id="modal-close">&times;</span>
+                <h2>Contact Us</h2>
+                <form id="contact-form">
+                    <label for="cf-name">Name</label>
+                    <input type="text" id="cf-name" placeholder="Enter your name" required>
+
+                    <label for="cf-phone">Phone number</label>
+                    <input type="tel" id="cf-phone" placeholder="Enter your phone number" required>
+
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+
+        <section id="pricing" class="pricing-section">
+            <div class="pricing-header">
+                <h2>Membership Plans</h2>
+                <p>Choose the plan that fits your goals</p>
+            </div>
+            <div class="pricing-container" id="pricing-container">
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <p>Connect with us on our platforms:</p>
+        <div class="contact-icons">
+            <img class="social-icon" id="facebook-icon" src="https://img.icons8.com/?size=96&id=118497&format=png"
+                alt="Social Icon">
+
+            <img class="social-icon" id="instagram-icon"
+                src="https://img.icons8.com/?size=96&id=Xy10Jcu1L2Su&format=png" alt="Messenger">
+        </div>
+        <p class="copyright">Copyright ©
+            <span id="year"></span>, P Company. All rights reserved.
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
